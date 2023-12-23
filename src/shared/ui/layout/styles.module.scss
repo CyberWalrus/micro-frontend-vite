@@ -1,3 +1,30 @@
-.spinner {
-    color: #f00;
+.layout {
+    position: relative;
+
+    display: grid;
+    grid-template-areas: 'header header header' 'title title title' 'main main main' 'footer footer footer';
+    width: 100dvw;
+    min-width: 320px;
+    min-height: 100dvh;
+}
+
+.title {
+    grid-area: title;
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: main;
+}
+
+.aside {
+    position: absolute;
+    z-index: 10;
 }

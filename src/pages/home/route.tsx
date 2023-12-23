@@ -1,11 +1,12 @@
+import { lazy } from 'react';
 import { Route } from '@tanstack/react-router';
 
-import { RootRoute } from '$widgets/root-route/root-route';
+import { rootRoute } from '$widgets/root-route/root-route';
 
-import { Home } from './home';
+const Home = lazy(() => import('./home'));
 
 export const aboutRoute = new Route({
     component: Home,
-    getParentRoute: () => RootRoute,
+    getParentRoute: () => rootRoute,
     path: '/',
 });

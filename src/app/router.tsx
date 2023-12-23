@@ -1,9 +1,9 @@
 import { Router } from '@tanstack/react-router';
 
 import { aboutRoute, homeRoute } from '$pages';
-import { RootRoute } from '$widgets';
+import { rootRoute } from '$widgets';
 
-const routeTree = RootRoute.addChildren([homeRoute, aboutRoute]);
+const routeTree = rootRoute.addChildren([homeRoute, aboutRoute]);
 
 export const router = new Router({ routeTree });
 

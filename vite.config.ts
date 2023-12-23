@@ -22,6 +22,7 @@ export default defineConfig({
             $helpers: resolve(__dirname, './src/helpers'),
             $hooks: resolve(__dirname, './src/hooks'),
             $pages: resolve(__dirname, './src/pages'),
+            $shared: resolve(__dirname, './src/shared'),
             $stories: resolve(__dirname, './src/stories'),
             $styles: resolve(__dirname, './src/styles'),
             $types: resolve(__dirname, './src/types'),

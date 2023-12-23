@@ -66,12 +66,6 @@ module.exports = {
                 'sort-keys-fix/sort-keys-fix': 0,
             },
         },
-        {
-            files: ['*.ts', 'constants.tsx', '**/constants/**', '**/hooks/**'],
-            rules: {
-                'import/prefer-default-export': 0,
-            },
-        },
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: { project: './tsconfig.json' },
@@ -89,7 +83,7 @@ module.exports = {
     root: true,
     rules: {
         '@typescript-eslint/array-type': [1, { default: 'array-simple', readonly: 'array-simple' }],
-        '@typescript-eslint/consistent-type-definitions': [1, 'interface'],
+        '@typescript-eslint/consistent-type-definitions': [1, 'type'],
         '@typescript-eslint/consistent-type-imports': 1,
         '@typescript-eslint/naming-convention': 0,
         '@typescript-eslint/no-unused-expressions': 0,
@@ -111,7 +105,6 @@ module.exports = {
         'filenames/match-regex': [2, '^[a-z0-9-.]+$', true, true],
         'getter-return': 1,
         'global-require': 0,
-
         'import/no-extraneous-dependencies': [
             2,
             {
@@ -128,7 +121,9 @@ module.exports = {
                 peerDependencies: true,
             },
         ],
+
         'import/order': 0,
+        'import/prefer-default-export': 0,
 
         'jsx-a11y/anchor-is-valid': 0,
         'jsx-a11y/click-events-have-key-events': 0,
@@ -191,6 +186,7 @@ module.exports = {
         'react/state-in-constructor': 0,
         'react/static-property-placement': 0,
         'react-hooks/exhaustive-deps': 1,
+        'simple-import-sort/exports': 2,
 
         'simple-import-sort/imports': [
             2,

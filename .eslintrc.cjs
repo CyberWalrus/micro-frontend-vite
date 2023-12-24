@@ -86,6 +86,7 @@ module.exports = {
         '@typescript-eslint/consistent-type-definitions': [1, 'type'],
         '@typescript-eslint/consistent-type-imports': 1,
         '@typescript-eslint/naming-convention': 0,
+        '@typescript-eslint/no-throw-literal': 0,
         '@typescript-eslint/no-unused-expressions': 0,
         '@typescript-eslint/no-unused-vars': [
             1,

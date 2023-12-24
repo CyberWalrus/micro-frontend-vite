@@ -1,24 +1,23 @@
 import { lazyRouteComponent, Route } from '@tanstack/react-router';
 
+import { Spinner } from '$shared/ui';
 import { rootRoute } from '$widgets/root-route/root-route';
 
-export const homeRoute = new Route({
-    beforeLoad: () => ({
-        foo: 'bar',
-    }),
+export const aboutRoute = new Route({
     component: lazyRouteComponent(() => import('./about')),
     gcTime: 0,
     getParentRoute: () => rootRoute,
-    loader: () => {
+    loader: async () => {
         const isAwait = new Promise((res) => {
             setTimeout(() => {
                 res(true);
             }, 2000);
         });
 
-        return isAwait;
+        await isAwait;
 
-        // ...
+        return true;
     },
     path: '/about',
+    pendingComponent: Spinner,
 });

@@ -1,12 +1,24 @@
-import { lazy } from 'react';
-import { Route } from '@tanstack/react-router';
+import { lazyRouteComponent, Route } from '@tanstack/react-router';
 
 import { rootRoute } from '$widgets/root-route/root-route';
 
-const About = lazy(() => import('./about'));
-
 export const homeRoute = new Route({
-    component: About,
+    beforeLoad: () => ({
+        foo: 'bar',
+    }),
+    component: lazyRouteComponent(() => import('./about')),
+    gcTime: 0,
     getParentRoute: () => rootRoute,
+    loader: () => {
+        const isAwait = new Promise((res) => {
+            setTimeout(() => {
+                res(true);
+            }, 2000);
+        });
+
+        return isAwait;
+
+        // ...
+    },
     path: '/about',
 });

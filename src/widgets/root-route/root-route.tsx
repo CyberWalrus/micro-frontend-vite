@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { Outlet, RootRoute } from '@tanstack/react-router';
+import { Outlet, RootRoute as RootRouteCreate } from '@tanstack/react-router';
 
 import { Layout } from '$shared/ui';
 import { LayoutHeader } from '$widgets/layout-header';
@@ -16,7 +16,7 @@ const TanStackRouterDevtools =
               })),
           );
 
-export const rootRoute = new RootRoute({
+export const rootRoute = new RootRouteCreate({
     component: () => (
         <Suspense>
             <Layout

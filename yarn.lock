@@ -1154,18 +1154,19 @@
   resolved "https://registry.yarnpkg.com/@csstools/selector-specificity/-/selector-specificity-3.0.1.tgz#d84597fbc0f897240c12fc0a31e492b036c70e40"
   integrity sha512-NPljRHkq4a14YzZ3YD406uaxh7s0g6eAq3L9aLOWywoqe8PkYamAvtsh7KNX6c++ihDrJ0RiU+/z7rGnhlZ5ww==
 
-"@cyber-walrus/configs@0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@cyber-walrus/configs/-/configs-0.0.3.tgz#2b384370014b333af0071d6fc49ff2e2338ececd"
-  integrity sha512-HC1gQW30ozoEtj8QWuJAAL0O/YJjYVS2wlFupvf+mYkvUFyMk4tLMcoP5YhRF8M32T/L0Y7j70mnvWJEtlajFQ==
+"@cyber-walrus/configs@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@cyber-walrus/configs/-/configs-1.0.0.tgz#0b691fa003fbfafe79e9cc47dac9890ed3899f4f"
+  integrity sha512-dQK4BG6Rs2UZnlsYQp6BjO4CldYptJe6yd4TLvsQ1fxPyqIWER7VNZnwtNpq38iUTf7AiKzOUBBcY1ssv/rt0Q==
   dependencies:
-    "@cyber-walrus/eslint-config" "0.0.3"
-    "@cyber-walrus/stylelint-config" "0.0.1"
+    "@cyber-walrus/eslint-config" "1.0.0"
+    "@cyber-walrus/stylelint-config" "1.0.0"
+    "@cyber-walrus/typescript-config" "1.0.0"
 
-"@cyber-walrus/eslint-config@0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@cyber-walrus/eslint-config/-/eslint-config-0.0.3.tgz#4c28448c0024d7924fe4676e631c6834067f6e77"
-  integrity sha512-XbkJlv62VgdqNtASw0b9FAUaQ7yItHMrA9owvPPwDgnHNyTHNeJnDEtMFljGv56EtSkNv/NtlSoLujATf3ro1g==
+"@cyber-walrus/eslint-config@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@cyber-walrus/eslint-config/-/eslint-config-1.0.0.tgz#23a1b649b68e03e10a589e07ba3a6d270199e10e"
+  integrity sha512-R+7TCR5ew5rCFrQU2yqDB+PsfKwerwtq6nmkBSkYJ8Jnh/ee/RTTa/a/6LyhMJKiYcBuGJxW9sN1JPB1Eh+kRw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "6.16.0"
     "@typescript-eslint/parser" "6.16.0"
@@ -1187,12 +1188,11 @@
     eslint-plugin-sort-keys-fix "1.1.2"
     eslint-plugin-typescript-sort-keys "3.1.0"
     prettier "3.1.1"
-    typescript "5.3.3"
 
-"@cyber-walrus/stylelint-config@0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@cyber-walrus/stylelint-config/-/stylelint-config-0.0.1.tgz#f9303f11f9c555d7e271dd159a010815e27394b9"
-  integrity sha512-Uby+7786lRpUL+LZChzJQARwt4EFqrlXDoiLaMoFJ0oLukGHoy6DXHz+ssTnXBemnmua0PtLR0kXm8DNW99vZw==
+"@cyber-walrus/stylelint-config@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@cyber-walrus/stylelint-config/-/stylelint-config-1.0.0.tgz#0c9a8faff02ea2bcabff5645e947515ed7827a8b"
+  integrity sha512-oL6s5VJKnLLlHI7MDN4+n9LgkUVtYPIpXETa/0+66loG+OlK0uaPkxJcrX1llQcjaizM37rD/GUqMpPNCUGtKQ==
   dependencies:
     "@greenly/stylelint-config-rational-order" "0.2.1"
     postcss "8.4.32"
@@ -1208,6 +1208,14 @@
     stylelint-order "6.0.4"
     stylelint-scss "6.0.0"
     stylelint-z-index-value-constraint "1.3.0"
+
+"@cyber-walrus/typescript-config@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@cyber-walrus/typescript-config/-/typescript-config-1.0.0.tgz#95f580b586e0b219f2427a8c58ffb17579b589a8"
+  integrity sha512-TNiCDZBS0MksYnbWbqmdjLcw7CLzfnr8R8k2t/uK3zvRo0umjlfkBT+xUN18qzt4dFopeCgOy7CfQZ8ZbKZrTg==
+  dependencies:
+    typescript "5.3.3"
+    typescript-plugin-css-modules "5.0.2"
 
 "@esbuild/aix-ppc64@0.19.10":
   version "0.19.10"
